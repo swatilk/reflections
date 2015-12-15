@@ -1,0 +1,12 @@
+1) What happens when you initialize a repository? Why do you need to do it?
+
+When a repository is initilaized, git meta data are added to the directory and any changes to the files inside the directory are tracked by git. If any of the files if changed, we can commit that change along with suitable commit message.
+If we want to track the changes to the files of the directory with git, we need to initialize it, so git knows what all files are to be tracked.
+
+2) How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+Staging area is where we add files to be committed, before actually committing them. We can add more files or remove files to or from the staginf area depending on our requirement. If we want to logically separate commits, and consider two different files as logically separate, we can add one file to the staging area first, commit it and then add the next file to the staging area and then commit that later.
+Working directory is where we have all the files we are working on. It is not necessary that we would want to commit all of those files. This is where staging area comes to picture by letting us choose which files from the working directory we want to add to staging area which can later be committed.
+eg: working directory has lesson1.txt and lesson2.txt
+we can add just lesson1.txt to staging area by doing,
+$git add lesson1.txt
