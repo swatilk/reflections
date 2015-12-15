@@ -1,0 +1,37 @@
+1) How did viewing a diff between two versions of a file help you see the bug that was introduced?
+The diff command helped me see where exactly in the code, changes were introduced and where the new code differs from the old.
+
+2) How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+If the new changes made to the code breaks the entire code for some reason, it will be very useful to be able to get back to the older version and then start working on it again.
+
+3) What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+manual commit: pros
+	* We can choose the when to make commits and decide which fixes can be combined into a commit
+manual commit: cons
+	* Sometimes it is possible we forget to commit the crucial change we made to the commit or sometimes we may combine too big of a code change into a single commit which will clutter our commit history.
+automatic save (Google Docs): pros
+	* We do not have to worry about forgetting to commit since the editor will do it for us
+automatic save (Google Docs): cons
+	* Even a small change in the document is committed which leads to cluttered history and to go back to previous version becomes a tedious job of reading through the entire history of miniscule changes
+
+4) Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+	git allows code style files to be committed while Google Docs is a spreadsheet and does not interpret the content of its files if its a programming langugage and hence does not feel the need to lin some files.
+
+5) How can you use the commands git log and git diff to view the history of files?
+git log command gives the recent commits made to the current repository along with commmit ids and what changes were made in that commit, commit message and other details.
+git diff command expects two arguments which are the commit ids (first_id, second_id) and produces in color (if 'git config --global color-ui auto' is used) the lines added (in color green) or deleted (in color red) to or from the file. If multiple files were changed, the result displays the file names and the lines changed under the name.
+
+6) How can you use the commands git log and git diff to view the history of files?
+
+git log will give the log/history of the commits made to that file/respository. Each log message contains the commit ID, Timestamp of the commit made, Author of the commit and commit message. It is useful to backtrack the changes made, in case some change breaks the entire code.
+git diff id used to find the differences between two versions of a file or between two commits (Each commit may involve changes to multiple files). This commmand takes in commit IDs as arguments and displays the changes made in terms of, what lines were inserted, in green color and what lines were deleted, in red color, to or from the newer version.
+
+7) How might using version control make you more confident to make changes that could break something?
+
+Being able to get back the older, working version of a code is very important, since it gives the freedom to experiment on the code in a wide range. I definitely gives me more confidence to make changes that I am not sure of because I know, if this does not work, I will be able to get back to the older version which I am sure, works perfectly fine.
+
+8) Now that you have your workspace set up, what do you want to try using Git for?
+
+I want to use Git to directly work on any project without having to save the entire files on github using GUI. I would like to be able to be connected to github and be able to easily commit code changes to the repository
+
+
