@@ -5,8 +5,22 @@ If we want to track the changes to the files of the directory with git, we need 
 
 2) How is the staging area different from the working directory and the repository? What value do you think it offers?
 
-Staging area is where we add files to be committed, before actually committing them. We can add more files or remove files to or from the staginf area depending on our requirement. If we want to logically separate commits, and consider two different files as logically separate, we can add one file to the staging area first, commit it and then add the next file to the staging area and then commit that later.
+Staging area is where we add files to be committed, before actually committing them. We can add more files or remove files to or from the staging area depending on our requirement. If we want to logically separate commits, and consider two different files as logically separate, we can add one file to the staging area first, commit it and then add the next file to the staging area and then commit that later.
 Working directory is where we have all the files we are working on. It is not necessary that we would want to commit all of those files. This is where staging area comes to picture by letting us choose which files from the working directory we want to add to staging area which can later be committed.
 eg: working directory has lesson1.txt and lesson2.txt
 we can add just lesson1.txt to staging area by doing,
 $git add lesson1.txt
+
+3) How can you use the staging area to make sure you have one commit per logical change?
+
+Staging area lets us separate the commits logically in the way that it allows us to add only few change(s) to the staging area, which we can commit with appropriate commit message. And then we can continue the same process for other changes which we need separated.
+
+4) What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+When we want to experiment with a feature and do not want it to affect the main code base, branches come in handy. We can create a branch which is like a copy of the main code, and start implementing the new feature we want, to the branch. This will help us visualize the new feature and lets us compare it with the original version without breaking the original. Sure, this can be achieved by commmitting the changes and using 'checkout' command to go back and forth between new and older versions. But this is way too much overhead and branches are a cleaner way to achieve the same results.
+
+Once the experimental feature gets stable, it can be merged with the original.
+
+5) How do the diagrams help you visualize the branch structure?
+
+Diagrams make it visually easy to understand what is going on under the hood when branches are made and when commits are made in any of those branches. It also makes it easy to understand what commits are unreachable and why so we can take necessary steps to achieve exactly what we want
