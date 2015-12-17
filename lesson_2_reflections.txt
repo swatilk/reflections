@@ -23,4 +23,9 @@ Once the experimental feature gets stable, it can be merged with the original.
 
 5) How do the diagrams help you visualize the branch structure?
 
-Diagrams make it visually easy to understand what is going on under the hood when branches are made and when commits are made in any of those branches. It also makes it easy to understand what commits are unreachable and why so we can take necessary steps to achieve exactly what we want
+Diagrams make it visually easy to understand what is going on under the hood when branches are made and when commits are made in any of those branches. It also makes it easy to understand what commits are unreachable and why so we can take necessary steps to achieve exactly what we want.
+
+6) What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+The changes made to a file on two branches are merged and the branch we merged to, now has the changes made by both the branches. The commits are arranged in the order of time at which each was made.
+Representing merge shows us what commits are unreachable and also shows what all changes were made in each branch.
