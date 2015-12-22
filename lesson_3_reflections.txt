@@ -5,3 +5,17 @@ Remote repositories are extremely useful when we want share our code/changes wit
 2) Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
 
 There is a good chance there is someone else working on the same repository, who is making changes to different feature/file. This feature may be unstable and might potentailly break the entire code. If git pulled all the changes from the GitHub automatically, at a point we are working on some other feature on the same code base, this is bound to produce unexpected results even if our code works perfectly fine. This makes it reslly difficult to trace the error since it might be the other feature's error that's breaking our feature. Hence, it is always ideal to manually pull the changes from GitHub, since we are at a better position to decide when to pull changes.
+
+3) Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+fork is a copy of a repository of some other person which can be obtained on GitHub. The fork shows the commit history of the original owner. It is just like cloning the repository, to which we can make changes/additions and make commits(to the forked repo)
+
+clones is a duplicate (copy) of a repository, which is either copied from GitHub or local machine. They contain the entire commit history of the original respository.
+
+Branch is a division within a repository. A branch may be used to implement new features and therefore may contain new commits from master branch eventually.
+
+4) What is the benefit of having a copy of the last known state of the remote stored locally?
+
+This is useful when we multiple people are working on the project and pushes their commit onto GitHub. This won't necessarily cause any conflict for us until we pull those changes onto out local machine. Hence, git gives us the freedom to work on the project on our local machine (through a copy of the last known state) without having to worry about changes being made onto the project on GitHub.
+
+
